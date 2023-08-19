@@ -136,16 +136,3 @@ class Accordion {
   document.querySelectorAll('details').forEach((el) => {
     new Accordion(el);
   });
-
-
-  // Download button sign change
-  $(document).ready(function() { 
-    $('.join2').click(function(){
-      var src = $(".join2 img").attr('src');
-  
-      if(src=="images/download.svg")
-        $(".join2 img").attr('src',"images/download2.svg");
-      else
-        $(".join2 img").attr('src',"images/download.svg");
-    });
-  });
